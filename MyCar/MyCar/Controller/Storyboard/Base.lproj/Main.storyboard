@@ -140,7 +140,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="4hB-yE-Thx">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Wph-ve-f6D" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Wph-ve-f6D" customClass="MCTabBarController" customModule="MyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="TWB-0V-2u0">
                         <autoresizingMask key="autoresizingMask"/>

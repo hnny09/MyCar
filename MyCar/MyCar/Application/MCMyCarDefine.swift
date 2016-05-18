@@ -70,8 +70,8 @@ func MCStringWithClass(sting:AnyClass) -> String {
 
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
-let GMSkinNomalColor = MCColorWithRGBA(50.0,G: 194.0,B: 124.0,A: 1)
-let GMSkinHeightColor = MCColorWithRGBA(44.0, G: 168.0, B: 108.0 , A: 1)
+let MCSkinNomalColor = UIColor.blackColor()//MCColorWithRGBA(50.0,G: 194.0,B: 124.0,A: 1)
+let MCSkinHeightColor = UIColor.redColor()// MCColorWithRGBA(44.0, G: 168.0, B: 108.0 , A: 1)
 
 
 #if DEBUG
