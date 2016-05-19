@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="25A-St-uoX">
             <objects>
-                <viewController id="UYW-gs-Tz0" sceneMemberID="viewController">
+                <viewController id="UYW-gs-Tz0" customClass="ViewController" customModule="MyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nCh-if-FgJ"/>
                         <viewControllerLayoutGuide type="bottom" id="ey3-a8-Ybj"/>
@@ -16,7 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="29M-bR-EbF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CSi-a4-vxz"/>
                 </viewController>

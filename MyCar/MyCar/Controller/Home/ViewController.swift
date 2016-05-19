@@ -9,11 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private var Name: String {
+        set{
+            print("zhangsan")
+        }
+        get {
+            return "lisi"
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("viewDidLoad")
+        print(self.Name)
+       
     }
 
     override func didReceiveMemoryWarning() {

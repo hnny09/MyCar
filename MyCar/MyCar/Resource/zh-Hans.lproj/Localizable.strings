@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  MyCar
+
+  Created by _MyComputer_ on 16/5/19.
+  Copyright © 2016年 _MyComputer_. All rights reserved.
+*/
+
+// tabBarController
+
+"TabBar_Home_Title" = "首页";
+"TabBar_Form_Title" = "类型";
+"TabBar_Forum_Title" = "社区";
+"TabBar_My_Title" = "我";

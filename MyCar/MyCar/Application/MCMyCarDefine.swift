@@ -63,7 +63,11 @@ func MCViewControllerWithClass(string:AnyClass) -> UIViewController{
 func MCStringWithClass(sting:AnyClass) -> String {
     let  returnString = NSStringFromClass(sting)
     let  array = returnString.componentsSeparatedByString(".")
-    return array[1]
+    if array.count > 0 {
+        return array[array.count-1]
+    } else {
+        return array[0]
+    }
 }
 
 //MARK:常量
@@ -71,7 +75,7 @@ func MCStringWithClass(sting:AnyClass) -> String {
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
 let MCSkinNomalColor = UIColor.blackColor()//MCColorWithRGBA(50.0,G: 194.0,B: 124.0,A: 1)
-let MCSkinHeightColor = UIColor.redColor()// MCColorWithRGBA(44.0, G: 168.0, B: 108.0 , A: 1)
+let MCSkinHeightColor = MCColorWithHexString("#0EB400")// MCColorWithRGBA(44.0, G: 168.0, B: 108.0 , A: 1)
 
 
 #if DEBUG

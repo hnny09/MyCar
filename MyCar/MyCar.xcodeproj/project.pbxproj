@@ -12,10 +12,12 @@
 		4590AE3C1CEB1672001D4C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590AE261CEB1672001D4C3F /* AppDelegate.swift */; };
 		4590AE3D1CEB1672001D4C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4590AE2B1CEB1672001D4C3F /* LaunchScreen.storyboard */; };
 		4590AE3E1CEB1672001D4C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4590AE2D1CEB1672001D4C3F /* Main.storyboard */; };
-		4590AE3F1CEB1672001D4C3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590AE2F1CEB1672001D4C3F /* ViewController.swift */; };
 		4590AE401CEB1672001D4C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4590AE351CEB1672001D4C3F /* Assets.xcassets */; };
 		4590AE411CEB1672001D4C3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4590AE361CEB1672001D4C3F /* Info.plist */; };
 		4590AE421CEB1672001D4C3F /* MyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4590AE371CEB1672001D4C3F /* MyCar.xcdatamodeld */; };
+		459F98651CED6B5A00FDF938 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 459F98671CED6B5A00FDF938 /* Localizable.strings */; };
+		45A762B71CEDB9F200D54372 /* MCConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A762B61CEDB9F200D54372 /* MCConfigData.swift */; };
+		45A762BF1CEDC0E200D54372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A762BC1CEDC0E200D54372 /* ViewController.swift */; };
 		E78119F674C6BB30831C802B /* Pods_MyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B086800BFF74505369AFA67 /* Pods_MyCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,10 +30,14 @@
 		4590AE261CEB1672001D4C3F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4590AE2C1CEB1672001D4C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4590AE2E1CEB1672001D4C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4590AE2F1CEB1672001D4C3F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4590AE351CEB1672001D4C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4590AE361CEB1672001D4C3F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4590AE381CEB1672001D4C3F /* MyCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCar.xcdatamodel; sourceTree = "<group>"; };
+		459F98661CED6B5A00FDF938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		459F98681CED6B6A00FDF938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		459F98691CED6B7100FDF938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		45A762B61CEDB9F200D54372 /* MCConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCConfigData.swift; sourceTree = "<group>"; };
+		45A762BC1CEDC0E200D54372 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45C36D1D1CEB13D4004FDFD4 /* MyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,9 +64,10 @@
 		4590AE251CEB1672001D4C3F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				450A60BD1CEB2050009C84F5 /* MCMyCarDefine.swift */,
 				4590AE261CEB1672001D4C3F /* AppDelegate.swift */,
 				450A60BF1CEB2A7A009C84F5 /* MCTabBarController.swift */,
+				450A60BD1CEB2050009C84F5 /* MCMyCarDefine.swift */,
+				45A762B61CEDB9F200D54372 /* MCConfigData.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -82,8 +89,11 @@
 		4590AE291CEB1672001D4C3F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				45A762BB1CEDC0E200D54372 /* Home */,
+				45A762BA1CEDC0E200D54372 /* Car */,
+				45A762BD1CEDC0E200D54372 /* me */,
+				45A762BE1CEDC0E200D54372 /* Meaning */,
 				4590AE2A1CEB1672001D4C3F /* Storyboard */,
-				4590AE2F1CEB1672001D4C3F /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +141,7 @@
 				4590AE351CEB1672001D4C3F /* Assets.xcassets */,
 				4590AE361CEB1672001D4C3F /* Info.plist */,
 				4590AE371CEB1672001D4C3F /* MyCar.xcdatamodeld */,
+				459F98671CED6B5A00FDF938 /* Localizable.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -154,6 +165,35 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		45A762BA1CEDC0E200D54372 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		45A762BB1CEDC0E200D54372 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				45A762BC1CEDC0E200D54372 /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		45A762BD1CEDC0E200D54372 /* me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
+		45A762BE1CEDC0E200D54372 /* Meaning */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Meaning;
 			sourceTree = "<group>";
 		};
 		45C36D141CEB13D4004FDFD4 = {
@@ -248,6 +288,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 45C36D141CEB13D4004FDFD4;
 			productRefGroup = 45C36D1E1CEB13D4004FDFD4 /* Products */;
@@ -264,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459F98651CED6B5A00FDF938 /* Localizable.strings in Resources */,
 				4590AE411CEB1672001D4C3F /* Info.plist in Resources */,
 				4590AE3D1CEB1672001D4C3F /* LaunchScreen.storyboard in Resources */,
 				4590AE401CEB1672001D4C3F /* Assets.xcassets in Resources */,
@@ -326,11 +368,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A762BF1CEDC0E200D54372 /* ViewController.swift in Sources */,
 				450A60C01CEB2A7A009C84F5 /* MCTabBarController.swift in Sources */,
 				4590AE421CEB1672001D4C3F /* MyCar.xcdatamodeld in Sources */,
 				450A60BE1CEB2050009C84F5 /* MCMyCarDefine.swift in Sources */,
-				4590AE3F1CEB1672001D4C3F /* ViewController.swift in Sources */,
 				4590AE3C1CEB1672001D4C3F /* AppDelegate.swift in Sources */,
+				45A762B71CEDB9F200D54372 /* MCConfigData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +394,16 @@
 				4590AE2E1CEB1672001D4C3F /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		459F98671CED6B5A00FDF938 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				459F98661CED6B5A00FDF938 /* Base */,
+				459F98681CED6B6A00FDF938 /* zh-Hans */,
+				459F98691CED6B7100FDF938 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
