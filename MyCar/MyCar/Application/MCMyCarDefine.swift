@@ -76,6 +76,8 @@ let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
 let MCSkinNomalColor = UIColor.blackColor()//MCColorWithRGBA(50.0,G: 194.0,B: 124.0,A: 1)
 let MCSkinHeightColor = MCColorWithHexString("#0EB400")// MCColorWithRGBA(44.0, G: 168.0, B: 108.0 , A: 1)
+let MCViewControllerBackGroundColor = UIColor.whiteColor()
+let MCNavgationBarBackGroundColor = MCSkinHeightColor
 
 
 #if DEBUG

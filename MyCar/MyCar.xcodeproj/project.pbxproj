@@ -18,6 +18,7 @@
 		459F98651CED6B5A00FDF938 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 459F98671CED6B5A00FDF938 /* Localizable.strings */; };
 		45A762B71CEDB9F200D54372 /* MCConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A762B61CEDB9F200D54372 /* MCConfigData.swift */; };
 		45A762BF1CEDC0E200D54372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A762BC1CEDC0E200D54372 /* ViewController.swift */; };
+		45A762C11CEDC54300D54372 /* MCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A762C01CEDC54300D54372 /* MCBaseViewController.swift */; };
 		E78119F674C6BB30831C802B /* Pods_MyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B086800BFF74505369AFA67 /* Pods_MyCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		459F98691CED6B7100FDF938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		45A762B61CEDB9F200D54372 /* MCConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCConfigData.swift; sourceTree = "<group>"; };
 		45A762BC1CEDC0E200D54372 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45A762C01CEDC54300D54372 /* MCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCBaseViewController.swift; sourceTree = "<group>"; };
 		45C36D1D1CEB13D4004FDFD4 /* MyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		4590AE271CEB1672001D4C3F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				45A762C01CEDC54300D54372 /* MCBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A762BF1CEDC0E200D54372 /* ViewController.swift in Sources */,
+				45A762C11CEDC54300D54372 /* MCBaseViewController.swift in Sources */,
 				450A60C01CEB2A7A009C84F5 /* MCTabBarController.swift in Sources */,
 				4590AE421CEB1672001D4C3F /* MyCar.xcdatamodeld in Sources */,
 				450A60BE1CEB2050009C84F5 /* MCMyCarDefine.swift in Sources */,

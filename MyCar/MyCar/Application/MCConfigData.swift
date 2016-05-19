@@ -27,5 +27,9 @@ public let URL_HotKey = "http://search.api.3g.youku.com/search/hotkeys?pid=69b81
 
 // juhe
 
-public let MCJuHeAppKey = "64cd0f8d189bc8861ef32a1fcbc13a21"
-public let MCJuHeBaseURL = "http://japi.juhe.cn/joke/content/list.from"
+public let MCJuHeMeaningAppKey = "64cd0f8d189bc8861ef32a1fcbc13a21"
+public let MCJuHeMeaningBaseURL = "http://japi.juhe.cn/joke/content/list.from"
+
+
+public let MCJuHeNewAppKey = "17ef820f976ad95790c78ebe0c77b95a"
+public let MCJuHeNewBaseURL = "http://op.juhe.cn/onebox/news/query"

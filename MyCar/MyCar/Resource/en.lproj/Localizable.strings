@@ -5,3 +5,10 @@
   Created by _MyComputer_ on 16/5/19.
   Copyright © 2016年 _MyComputer_. All rights reserved.
 */
+
+"TabBar_Home_Title" = "News";
+"TabBar_Form_Title" = "Cars";
+"TabBar_Forum_Title" = "Mean";
+"TabBar_My_Title" = "Me";
+
+"ViewController_Home_Title" = "News";

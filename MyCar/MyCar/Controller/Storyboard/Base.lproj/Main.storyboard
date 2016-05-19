@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--新闻-->
         <scene sceneID="25A-St-uoX">
             <objects>
                 <viewController id="UYW-gs-Tz0" customClass="ViewController" customModule="MyCar" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,13 +16,90 @@
                     <view key="view" contentMode="scaleToFill" id="29M-bR-EbF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Scl-O2-mAA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Home_Cell" textLabel="e3B-xa-7ut" detailTextLabel="QXd-Za-Dih" imageView="bms-ty-BTJ" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="ehF-Fs-Xfe">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ehF-Fs-Xfe" id="sYi-BP-j3Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e3B-xa-7ut">
+                                                    <rect key="frame" x="87" y="5" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QXd-Za-Dih">
+                                                    <rect key="frame" x="87" y="25" width="31" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Home_Car" id="bms-ty-BTJ">
+                                                    <rect key="frame" x="15" y="0.0" width="57" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="UYW-gs-Tz0" id="bUl-xl-Iqp"/>
+                                    <outlet property="delegate" destination="UYW-gs-Tz0" id="K0M-tS-AG0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Scl-O2-mAA" secondAttribute="bottom" id="2Bz-6B-lFg"/>
+                            <constraint firstItem="ey3-a8-Ybj" firstAttribute="top" secondItem="Scl-O2-mAA" secondAttribute="bottom" id="90C-bg-i18"/>
+                            <constraint firstItem="Scl-O2-mAA" firstAttribute="top" secondItem="nCh-if-FgJ" secondAttribute="bottom" id="9VB-ya-DhI"/>
+                            <constraint firstItem="Scl-O2-mAA" firstAttribute="leading" secondItem="29M-bR-EbF" secondAttribute="leading" id="U8o-V1-m0P"/>
+                            <constraint firstItem="Scl-O2-mAA" firstAttribute="top" secondItem="29M-bR-EbF" secondAttribute="top" id="YHR-Lc-m2R"/>
+                            <constraint firstItem="Scl-O2-mAA" firstAttribute="leading" secondItem="29M-bR-EbF" secondAttribute="leading" id="aM9-HF-Q2l"/>
+                            <constraint firstItem="Scl-O2-mAA" firstAttribute="top" secondItem="nCh-if-FgJ" secondAttribute="bottom" id="jdH-Vz-RTX"/>
+                            <constraint firstItem="Scl-O2-mAA" firstAttribute="top" secondItem="nCh-if-FgJ" secondAttribute="bottom" id="lRo-aS-tYY"/>
+                            <constraint firstItem="ey3-a8-Ybj" firstAttribute="top" secondItem="Scl-O2-mAA" secondAttribute="bottom" id="rP3-m3-tsu"/>
+                            <constraint firstAttribute="trailing" secondItem="Scl-O2-mAA" secondAttribute="trailing" id="sYA-1w-Xa2"/>
+                            <constraint firstAttribute="trailing" secondItem="Scl-O2-mAA" secondAttribute="trailing" id="smO-Og-M5u"/>
+                            <constraint firstItem="ey3-a8-Ybj" firstAttribute="top" secondItem="Scl-O2-mAA" secondAttribute="bottom" id="yfA-Ef-1NN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9VB-ya-DhI"/>
+                                <exclude reference="U8o-V1-m0P"/>
+                                <exclude reference="jdH-Vz-RTX"/>
+                                <exclude reference="lRo-aS-tYY"/>
+                                <exclude reference="smO-Og-M5u"/>
+                                <exclude reference="90C-bg-i18"/>
+                                <exclude reference="rP3-m3-tsu"/>
+                                <exclude reference="yfA-Ef-1NN"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="CSi-a4-vxz"/>
+                    <navigationItem key="navigationItem" title="新闻" id="CSi-a4-vxz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vpz-C8-suM">
+                            <connections>
+                                <action selector="respondsToRightBarButtonItem:" destination="UYW-gs-Tz0" id="v3j-oP-Nqf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Scl-O2-mAA" id="DfN-Vr-KgA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fB-JE-OxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-702" y="3363"/>
+            <point key="canvasLocation" x="-560" y="3040"/>
         </scene>
         <!--首页-->
         <scene sceneID="CIs-87-cIz">
@@ -184,7 +261,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cao-4K-Xum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="3347"/>
+            <point key="canvasLocation" x="89" y="3268"/>
         </scene>
         <!--车型-->
         <scene sceneID="WJI-ZR-Dx1">
@@ -204,4 +281,7 @@
             <point key="canvasLocation" x="112" y="2075"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home_Car" width="146" height="110"/>
+    </resources>
 </document>
