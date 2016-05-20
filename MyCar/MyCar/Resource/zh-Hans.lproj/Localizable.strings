@@ -13,4 +13,12 @@
 "TabBar_Forum_Title" = "社区";
 "TabBar_My_Title" = "我";
 
+//MARK:home
 "ViewController_Home_Title" = "新闻";
+"ViewController_BrandList_Title" = "品牌列表";
+
+
+
+"HomeViewController_TableView_Car" = "汽车";
+"HomeViewController_TableView_ScienceTechnology" = "科技";
+"HomeViewController_TableView_DeleteTitle" = "删除";

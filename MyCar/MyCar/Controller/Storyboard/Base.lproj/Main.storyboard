@@ -22,11 +22,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Home_Cell" textLabel="e3B-xa-7ut" detailTextLabel="QXd-Za-Dih" imageView="bms-ty-BTJ" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="ehF-Fs-Xfe">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Home_Cell" textLabel="e3B-xa-7ut" detailTextLabel="QXd-Za-Dih" imageView="bms-ty-BTJ" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="ehF-Fs-Xfe">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ehF-Fs-Xfe" id="sYi-BP-j3Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e3B-xa-7ut">
@@ -95,11 +95,41 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Scl-O2-mAA" id="DfN-Vr-KgA"/>
+                        <segue destination="0Bm-wf-k74" kind="push" identifier="MCNewsListVC" id="D9K-od-0Lw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fB-JE-OxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-560" y="3040"/>
+            <point key="canvasLocation" x="-628" y="2890"/>
+        </scene>
+        <!--新闻列表-->
+        <scene sceneID="iio-ml-GVP">
+            <objects>
+                <tableViewController title="新闻列表" hidesBottomBarWhenPushed="YES" id="0Bm-wf-k74" customClass="MCNewsListTableViewController" customModule="MyCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="emQ-3U-cFT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LnU-1q-0db">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LnU-1q-0db" id="WKK-xZ-fIv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0Bm-wf-k74" id="dcU-tE-DR8"/>
+                            <outlet property="delegate" destination="0Bm-wf-k74" id="iuB-U3-BjR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DSs-Y5-4xV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ja-68-BUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="3709"/>
         </scene>
         <!--首页-->
         <scene sceneID="CIs-87-cIz">
@@ -234,10 +264,10 @@
             </objects>
             <point key="canvasLocation" x="349" y="805"/>
         </scene>
-        <!--Root View Controller-->
+        <!--品牌列表-->
         <scene sceneID="SFA-I9-PBz">
             <objects>
-                <tableViewController id="gcu-WM-uTq" sceneMemberID="viewController">
+                <tableViewController title="品牌列表" id="gcu-WM-uTq" customClass="MCBrandListViewController" customModule="MyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7mL-Cu-3jM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +287,7 @@
                             <outlet property="delegate" destination="gcu-WM-uTq" id="gZU-Hg-qLv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="mJl-Nc-TxB"/>
+                    <navigationItem key="navigationItem" title="品牌列表" id="mJl-Nc-TxB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cao-4K-Xum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

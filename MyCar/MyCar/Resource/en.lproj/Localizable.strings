@@ -12,3 +12,9 @@
 "TabBar_My_Title" = "Me";
 
 "ViewController_Home_Title" = "News";
+"ViewController_BrandList_Title" = "BrandsList";
+
+"HomeViewController_TableView_Car" = "Car";
+"HomeViewController_TableView_ScienceTechnology" = "ScienceTechnology";
+"HomeViewController_TableView_DeleteTitle" = "Delete";
+

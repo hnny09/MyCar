@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		450A60BE1CEB2050009C84F5 /* MCMyCarDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A60BD1CEB2050009C84F5 /* MCMyCarDefine.swift */; };
 		450A60C01CEB2A7A009C84F5 /* MCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A60BF1CEB2A7A009C84F5 /* MCTabBarController.swift */; };
+		4518B71F1CEEA95A008DACAB /* MCBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518B71E1CEEA95A008DACAB /* MCBaseTableViewController.swift */; };
+		4518B7231CEEA9FB008DACAB /* MCNewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518B7221CEEA9FB008DACAB /* MCNewsListTableViewController.swift */; };
+		4518B7271CEEBA90008DACAB /* MCBrandListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518B7261CEEBA90008DACAB /* MCBrandListViewController.swift */; };
 		4590AE3C1CEB1672001D4C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590AE261CEB1672001D4C3F /* AppDelegate.swift */; };
 		4590AE3D1CEB1672001D4C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4590AE2B1CEB1672001D4C3F /* LaunchScreen.storyboard */; };
 		4590AE3E1CEB1672001D4C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4590AE2D1CEB1672001D4C3F /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 		302B258734DC866F9FE45B72 /* Pods-MyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCar/Pods-MyCar.release.xcconfig"; sourceTree = "<group>"; };
 		450A60BD1CEB2050009C84F5 /* MCMyCarDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMyCarDefine.swift; sourceTree = "<group>"; };
 		450A60BF1CEB2A7A009C84F5 /* MCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTabBarController.swift; sourceTree = "<group>"; };
+		4518B71E1CEEA95A008DACAB /* MCBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCBaseTableViewController.swift; sourceTree = "<group>"; };
+		4518B7221CEEA9FB008DACAB /* MCNewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCNewsListTableViewController.swift; sourceTree = "<group>"; };
+		4518B7261CEEBA90008DACAB /* MCBrandListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCBrandListViewController.swift; sourceTree = "<group>"; };
 		4590AE261CEB1672001D4C3F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4590AE2C1CEB1672001D4C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4590AE2E1CEB1672001D4C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				45A762C01CEDC54300D54372 /* MCBaseViewController.swift */,
+				4518B71E1CEEA95A008DACAB /* MCBaseTableViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 		45A762BA1CEDC0E200D54372 /* Car */ = {
 			isa = PBXGroup;
 			children = (
+				4518B7261CEEBA90008DACAB /* MCBrandListViewController.swift */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -181,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				45A762BC1CEDC0E200D54372 /* ViewController.swift */,
+				4518B7221CEEA9FB008DACAB /* MCNewsListTableViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -374,7 +383,10 @@
 				45A762BF1CEDC0E200D54372 /* ViewController.swift in Sources */,
 				45A762C11CEDC54300D54372 /* MCBaseViewController.swift in Sources */,
 				450A60C01CEB2A7A009C84F5 /* MCTabBarController.swift in Sources */,
+				4518B7271CEEBA90008DACAB /* MCBrandListViewController.swift in Sources */,
 				4590AE421CEB1672001D4C3F /* MyCar.xcdatamodeld in Sources */,
+				4518B71F1CEEA95A008DACAB /* MCBaseTableViewController.swift in Sources */,
+				4518B7231CEEA9FB008DACAB /* MCNewsListTableViewController.swift in Sources */,
 				450A60BE1CEB2050009C84F5 /* MCMyCarDefine.swift in Sources */,
 				4590AE3C1CEB1672001D4C3F /* AppDelegate.swift in Sources */,
 				45A762B71CEDB9F200D54372 /* MCConfigData.swift in Sources */,
